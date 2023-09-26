@@ -1,0 +1,368 @@
+main-color = #3C7A6E
+extra-color = #ffff72
+bonus-color = #efefef
+
+@font-face {
+    font-family: 'Actay Wide';
+    src: url('ActayWide-Bold.woff2') format('woff2'),
+        url('ActayWide-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+li, th, td, code
+	font-family 'PT Mono', sans-serif
+	color bonus-color
+
+th
+  font-family 'Actay Wide', sans-serif
+  line-height 1
+  color extra-color
+
+td:first-child
+  font-family 'Actay Wide', sans-serif
+
+th, td 
+  font-size 22px
+
+td:not(:first-child)
+  padding 0 !important
+
+code:before, li:before
+	color bonus-color !important
+	opacity 0.6 !important
+
+.shower
+	--color-line rgba(bonus-color, .3)
+
+blockquote
+	font-family 'PT Mono', sans-serif
+	color main-color
+	font-weight 100
+	letter-spacing -1px
+	&:before
+		font-family 'PT Sans'
+
+.cover-container {
+    padding 10px
+	width: 829px
+	height: 443px
+	rotate -.5deg
+	box-shadow 0px 0px 0px 10px rgba(0, 0, 0, .25)
+	z-index: -1;
+    overflow: hidden;
+}
+
+.bordered
+	box-shadow 0px 0px 0px 10px rgba(0, 0, 0, .25)
+	max-height 85%
+	max-width 85%
+	rotate -.5deg
+
+.bg11
+	background-image url("pictures/bg11.jpg")
+	background-size cover
+	background-position: center
+	padding 0 !important
+
+.bg11 > h2
+	padding 10px 10px 10px 90px !important
+	background extra-color !important
+	color black !important
+	margin-top 80px
+
+.bg2
+	background-image url("pictures/bg2.jpg")
+	background-size cover
+	background-position: center
+
+.bg3
+	background-image url("pictures/bg3.jpg")
+	background-size cover
+	background-position: center
+
+.bg4
+	background-image url("pictures/bg4.jpg")
+	background-size cover
+	background-position: center
+
+.bg6
+	background-image url("pictures/bg6.jpg")
+	background-size cover
+	background-position: center
+
+.bg8
+	background-image url("pictures/bg8.jpg")
+	background-size cover
+	background-position: center
+
+.bg9
+	background-image url("pictures/bg9.jpg")
+	background-size cover
+	background-position: center
+
+.bg13
+	background-image url("pictures/bg13.jpg")
+	background-size cover
+	background-position: center
+
+.bg14
+	background-image url("pictures/bg14.jpg")
+	background-size cover
+	background-position: center
+
+.bg16
+	background-image url("pictures/bg16.jpg")
+	background-size cover
+	background-position: center
+
+.bg15
+	background-image url("pictures/bg15.jpg")
+	background-size cover
+	background-position: center
+
+.bg18
+	background-image url("pictures/bg18.jpg")
+	background-size cover
+	background-position: center
+
+.end-link
+    font-family 'Actay Wide', sans-serif
+    bottom 10%
+    position absolute
+    color bonus-color
+    width 100%
+    padding 0 20px
+    font-size 25px
+    line-height 1.8
+    a
+        color bonus-color !important
+
+.source
+    font-family 'Actay Wide', sans-serif
+    bottom 10%
+    position absolute
+    padding 0 15px
+    font-size 25px
+    line-height 1.8
+    background extra-color
+    left 0
+    text-align center
+	
+.nosign
+	li
+		font-family 'PT Mono', sans-serif
+		&:before
+			visibility hidden
+		
+.slide::after
+	height 65px
+	width 65px
+	color bonus-color
+	font-family 'Actay Wide', sans-serif
+	font-size 31px
+	margin 20px 40px
+	line-height 1.4
+	border-radius: 50%;
+
+.slide.rbn::after
+	background black
+	
+.slide::before
+	position absolute
+	top 75px
+	right 100px
+	height 50px
+.slide
+	padding-top 60px
+	&.right
+		padding-left 550px
+	h2
+		color bonus-color
+		font-family 'Actay Wide', sans-serif
+		font-weight 100
+	a
+		color green
+		&.bottom
+			position absolute
+			bottom 15%
+			left 50%
+			margin-left: -100px
+
+.html
+	color #666
+
+.hightlight
+.important
+.alert
+	border-radius 0.2em
+	padding 0.1em 0.3em
+.hightlight
+	background #fafaa2
+.hightlight *
+	color black !important
+.important
+	background important-color
+	color #fff
+.important *
+	color #fff !important
+.alert
+	background #D10A0A
+	color #fff
+.alert *
+	color #fff !important
+.comment
+	color #999999
+	
+.progress:before
+	background extra-color
+	
+.tag
+	color #AD1531
+.attr
+	color #4F7302
+
+.slide
+	.shout.smaller
+		font-size 90px
+		a
+			color bonus-color
+	&.menu-slide
+		h2
+			font-size 120px
+			margin-bottom 0
+			padding 0 30px
+		ul
+			color bonus-color
+			& > li
+				font-size 120px
+				line-height 1
+				font-weight bold
+				padding 0 30px
+				&:before
+					opacity 0
+			
+		.selected-item
+			background-color main-color
+			display inline-block
+			
+		.transparent
+			opacity 0.25
+	&.label-header
+		h2
+			display inline-block
+			background rgba(main-color, .8)
+			padding 12px
+			font-family 'Actay Wide', sans-serif
+			font-size 35px
+			color bonus-color
+			&.shout
+				margin-left 0
+				padding 20px 0
+				font-size 52px
+				color bonus-color
+				border none
+				background none
+		&.bg
+			h2
+				background none
+				padding 0
+				color bonus-color
+	&.capture
+		h2
+			&.shout
+				font-size 64px;
+
+	&.top-center
+		h2
+			&.shout
+				margin-left: 150px
+				margin-top: -120px
+
+	h2 .label
+		color #FFF
+		padding 10px 40px
+		font-size 120px
+		&.right 
+			float right
+		
+	p.center
+		text-align center
+		img
+			max-width 100%
+		
+	&.white
+		p
+		ul
+		td
+			color #FFF
+	
+	&.bgblack
+		background black
+
+blockquote
+	font-size 20px	
+	line-height 1.4
+	color bonus-color
+	
+figcaption
+	opacity 0.5
+	color bonus-color
+	position: relative
+	line-height: 1.6
+	margin-top: 40px !important
+
+.label
+	background-color main-color
+	color #fff
+	padding 0 10px
+	display inline-block
+
+.screen-example
+	vertical-align top
+	float right
+	border 1px solid #efefef
+	padding-top 10px
+	width 700px
+	
+.relative
+	position relative
+
+	
+.slide ol.no-indent li, .slide ul.no-indent li
+	text-indent 0
+	margin-bottom 5px
+	
+.frame
+	box-shadow 0 0 5px 5px #eee
+	line-height 0
+	border-radius 15px 15px 0 0
+	.title
+		background-color #efefef
+		height 30px
+		border-radius 15px 15px 0 0
+		border 1px solid #aaa
+		border-bottom-width 0
+		line-height 24px
+		padding-left 15px
+	.btn
+		height 13px
+		width 13px
+		display inline-block
+		border-radius 50%
+		&.close
+			background-color red
+		&.hide
+			background-color yellow
+		&.expand
+			background-color green
+	
+.fade-opacity
+	opacity 0.25
+.opacity-0
+	opacity 0
+	
+
+.bold
+	font-weight: bold
