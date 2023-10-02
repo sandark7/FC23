@@ -60,72 +60,79 @@ blockquote
 	max-width 85%
 	rotate -.5deg
 
-.bg11
-	background-image url("pictures/bg11.jpg")
+
+.bgt, .bgl, .bgi
 	background-size cover
 	background-position: center
+
+.bgi
 	padding 0 !important
 
-.bg11 > h2
+.bgi > h2
 	padding 10px 10px 10px 90px !important
 	background extra-color !important
 	color black !important
 	margin-top 80px
 
-.bg2
-	background-image url("pictures/bg2.jpg")
-	background-size cover
-	background-position: center
-
-.bg3
-	background-image url("pictures/bg3.jpg")
-	background-size cover
-	background-position: center
-
-.bg4
-	background-image url("pictures/bg4.jpg")
-	background-size cover
-	background-position: center
-
-.bg6
-	background-image url("pictures/bg6.jpg")
-	background-size cover
-	background-position: center
-
-.bg8
-	background-image url("pictures/bg8.jpg")
-	background-size cover
-	background-position: center
-
-.bg9
-	background-image url("pictures/bg9.jpg")
-	background-size cover
-	background-position: center
-
-.bg13
-	background-image url("pictures/bg13.jpg")
-	background-size cover
-	background-position: center
-
-.bg14
+.bgl:nth-child(3n)
 	background-image url("pictures/bg14.jpg")
-	background-size cover
-	background-position: center
 
-.bg16
-	background-image url("pictures/bg16.jpg")
-	background-size cover
-	background-position: center
+.bgl:nth-child(3n+1)
+	background-image url("pictures/bg8.jpg")
 
-.bg15
+.bgl:nth-child(3n+2)
+	background-image url("pictures/bg13.jpg")
+
+.bgi:nth-child(4n)
+	background-image url("pictures/bg1.jpg")
+
+.bgi:nth-child(4n+1)
+	background-image url("pictures/bg2.jpg")
+
+.bgi:nth-child(4n+2)
+	background-image url("pictures/bg7.jpg")
+
+.bgi:nth-child(4n+3)
+	background-image url("pictures/bg10.jpg")
+
+.bgt:nth-child(13n)
+	background-image url("pictures/bg3.jpg")
+
+.bgt:nth-child(13n+1)
+	background-image url("pictures/bg4.jpg")
+
+.bgt:nth-child(13n+2)
+	background-image url("pictures/bg5.jpg")
+
+.bgt:nth-child(13n+3)
+	background-image url("pictures/bg6.jpg")
+
+.bgt:nth-child(13n+4)
+	background-image url("pictures/bg9.jpg")
+
+.bgt:nth-child(13n+5)
+	background-image url("pictures/bg11.jpg")
+
+.bgt:nth-child(13n+6)
+	background-image url("pictures/bg12.jpg")
+
+.bgt:nth-child(13n+7)
 	background-image url("pictures/bg15.jpg")
-	background-size cover
-	background-position: center
 
-.bg18
+.bgt:nth-child(13n+8)
+	background-image url("pictures/bg16.jpg")
+
+.bgt:nth-child(13n+9)
+	background-image url("pictures/bg17.jpg")
+
+.bgt:nth-child(13n+10)
 	background-image url("pictures/bg18.jpg")
-	background-size cover
-	background-position: center
+
+.bgt:nth-child(13n+11)
+	background-image url("pictures/bg19.jpg")
+
+.bgt:nth-child(13n+12)
+	background-image url("pictures/bg20.jpg")
 
 .end-link
     font-family 'Actay Wide', sans-serif
@@ -259,11 +266,12 @@ blockquote
 			color bonus-color
 			&.shout
 				margin-left 0
-				padding 20px 0
-				font-size 52px
+				padding 20px 1em
+				font-size 47px
 				color bonus-color
 				border none
 				background none
+				box-sizing border-box
 		&.bg
 			h2
 				background none
